@@ -1,0 +1,206 @@
+.contactContainer{
+    width: 100%;
+    min-height: 100vh;
+    /* border: 1px solid yellow; */
+    padding-top: 30px;
+}
+.contactContainer h1{
+    text-align: center;
+    /* font-weight: 700; */
+    /* margin-top: 20px; */
+}
+.innerContainer{
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.contactInfo{
+    min-width: 320px;
+    width: 40%;
+    padding: 10px;
+    color: #535bf2;
+    /* border: 1px solid yellow; */
+    border-radius: 15px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: left; */
+    text-align: left;
+    box-shadow: 0 5px 15px #ffffff1a, 0 10px 20px #220fd37a;
+
+}
+.infoItem{
+    border: 1px solid transparent;
+    margin-top: 5px;
+    padding: 10px;
+    /* box-shadow: 0 5px 15px #ffffff1a, 0 10px 20px #220fd37a; */
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+.infoItem i{
+    font-size: 1.9rem;
+    color: #535bf2;
+}
+.infoItem p{
+    display: inline;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.infoItem:hover{
+    box-shadow: 0 4px 13px #ffffff1a, 0 9px 18px #220fd37a;
+    transform: scale(1.01);
+    transition: 0.8s ease-in-out;
+
+}
+.socialLinksBox{
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+}
+.contactInfo .socialLink .icon{
+    width: 50px;
+    height: 40px;
+    color: #535bf2;
+}
+.contactInfo .socialLink .icon:hover{
+    transform: scale(1.07);
+    color: #3e46ee;
+    transition: 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+.Form{
+    min-width: 320px;
+    width: 40%;
+    padding: 10px;
+    color: #535bf2;
+    /* border: 1px solid yellow; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px #ffffff1a, 0 10px 20px #220fd37a;
+
+
+
+}
+.Form form{
+    width: 100%;
+    position: relative;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formBox{
+    border: 1px solid pink;
+
+}
+input {
+    display: block;
+    padding: 15px 5px;
+    border-radius: 10px;
+    border: 2px solid #535bf2;
+    /* max-width: 400px; */
+    width: 80%;
+    min-width: 310px;
+    margin-top: 20px;
+    outline-color: blue;
+    /* box-shadow: 0 5px 15px #ffffff1a, 0 10px 20px #220fd37a; */
+    /* box-shadow: 0px 2px 5px 1px blue; */
+
+
+}
+textarea{
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
+    min-width: 310px;
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #535bf2;
+    outline-color: blue;
+    /* box-shadow: 0 5px 5px #ffffff1a, 0 5px 10px #220fd37a; */
+
+
+}
+.Form form .messageBox{
+    width: 81%;
+    height: 14px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: start;
+    min-width: 315px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+
+}
+.Form form .messageBox small{
+    color: #f44336;
+    
+}
+.Form .submit {
+    border: 1px solid #535bf2;
+    border-radius: 8px;
+    background: linear-gradient(to right, #003b75, #000000e7);
+    padding: 9px 5px;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Form .submit:hover{
+    background: linear-gradient(to right, #0066CC, #00000091);
+    /* transform: scale(1.04);
+    transition: 0.8s ease-in-out; */
+    box-shadow: 0 1px 10px #ffffff1a, 0 3px 15px #220fd37a;
+
+}
+.submissionPopup{
+    position: absolute;
+    padding: 10px 15px;
+    background-color: green;
+    box-shadow: 0 4px 12px #ffffff41;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14.25px;
+    bottom: 40px;
+    animation: popupSlideUp 0.5s ease-out forwards;
+
+}
+@keyframes popupSlideUp {
+    0% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .innerContainer{
+        /* border: 1px solid red; */
+        /* display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly; */
+        gap: 50px;
+    }
+}

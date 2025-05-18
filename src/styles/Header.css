@@ -1,0 +1,111 @@
+.Navbar{
+  margin: -8px; /* Negative margin cancels out body's default margin */
+  width: calc(100% + 16px);
+  /* width: 100%; */
+  padding: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1;
+  /* border: 1px solid red;    */
+  border-bottom: 1px solid #808080c4;
+  background: linear-gradient(to right, black, #001F3F);
+  top: 0;
+  
+}
+
+.Navbar img{
+  width: 260px;
+  height: 65px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+  
+
+.NavLinks{
+  /* padding-right: 20px; */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid yellow; */
+  gap: 3px;
+}
+h1{
+  color: #535bf2;
+  font-size: 2rem;
+}
+
+.Navlink{
+  height: 30px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 730;
+  text-decoration: none;
+  text-align: center;
+  color:#535bf2;
+    
+}
+.Navlink:hover{
+  border: 2px solid #535bf2;
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  color: #535bf2;
+}
+.Navbar .icon{
+  font-size: 1rem;
+  display: none;
+}
+
+
+/* media queries for navbar responsiveness */
+
+@media screen and (max-width:800px) {
+  /* .NavLinks{
+    display: none;
+  } */
+  
+  .webMenu{
+    display: none;
+  }
+  .mobileMenu{
+    position: absolute;
+    top: 55px;
+    border: 1px solid white;
+    width: 100%;
+    background-color: white;
+  }
+  .mobileMenu .NavLinks{
+    display: flex;
+    flex-direction: column;
+    color: red;
+  }
+  .Navbar .icon{
+    margin-right: 10px;
+    font-size: 1rem;
+    display: inline;
+  }
+  .Navbar img{
+    width: 220px;
+    height: 55px;
+    /* border: 1px solid red; */
+  }
+}
+@media screen and (max-width:500px) {
+
+/* media queries for logo image */
+.Navbar img{
+  width: 195px;
+  height: 49px;
+  /* border: 1px solid red; */
+}
+  
+}

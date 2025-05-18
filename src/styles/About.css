@@ -1,0 +1,56 @@
+
+
+.aboutMe{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+
+}
+.about{
+    width: 42%;
+    min-width: 320px;
+    /* border: 1px solid red; */
+    padding: 0px 23px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.about h1 {
+    /* text-decoration: underline; */
+}
+.description{
+    width: 45%;
+    min-width: 320px;
+    color: #cecece;
+    padding: 5px 23px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+/* For mobile screen */
+@media screen and (max-width:767px) {
+
+
+.about{
+    justify-content: center;
+   
+}
+
+}
+
+/*style for tablets*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .aboutMe{
+       
+        flex-wrap: nowrap;
+        /* border: 1px solid red; */
+    
+    }
+}    
