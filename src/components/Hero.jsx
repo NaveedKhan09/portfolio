@@ -28,7 +28,7 @@ function Hero () {
                 </a>
             </div>
             <div className='skills'>
-                <a href="#"> <button className='skill' title='click to download Resume'>RESUME ➔</button> </a>
+                <a href="./Naveed Khan Front end web developer.pdf" download title='Click to download Resume'> <button className='skill'>RESUME ➔</button> </a>
                 <a href="#projects"> <button className='skill'>MY WORK ➔</button>  </a>
             </div>
             </div>
