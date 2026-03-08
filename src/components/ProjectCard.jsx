@@ -1,7 +1,9 @@
 export const ProjectCard = (props) =>{
     return(
         <div className="project_card">
-            <img src={props.projectImage} alt={props.title} title={props.title}/>
+            <div className="project_img_container">
+                <img src={props.projectImage} alt={props.title} title={props.title}/>
+            </div>
             <h3>{props.title}</h3>
             <p>{props.description}</p>
             <div className="buttons">
